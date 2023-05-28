@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: "Inter", sans-serif; */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.container {
+}
+
+.navbar {
+  border: 1px solid red;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0rem auto;
+  padding: 1.8rem 1.2rem;
+
+  width: 100%;
+  max-width: 83rem;
+  height: auto;
+}
+.navbar .nav-img {
+  width: 9rem;
+}
+.navbar .nav-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-links .nav-list {
+  display: flex;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links .nav-list a {
+  transition: 0.3s;
+}
+.nav-links .nav-list a:hover {
+  color: red;
+}
+
+.nav-links .nav-list .nav-list-item,
+.nav-buttons {
+  font-weight: 600;
+}
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-buttons .btn {
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: white;
+}
+
+.nav-buttons a {
+  transition: 0.3s;
+}
+.nav-buttons .hover:hover {
+  color: red;
+}
+.nav-buttons .btn:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 82, 48, 0.5);
+}
