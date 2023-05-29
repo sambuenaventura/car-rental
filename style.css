@@ -26,12 +26,9 @@ body {
   color: var(--primary);
 }
 
-.container {
-}
-
 .navbar {
-  border: 1px solid red;
-  background-color: white;
+  /* border: 1px solid red; */
+  background-color: initial;
 
   display: flex;
   justify-content: space-between;
@@ -43,6 +40,12 @@ body {
   width: 100%;
   max-width: 83rem;
   height: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
 .navbar .nav-img {
   width: 9rem;
@@ -90,4 +93,80 @@ body {
 }
 .nav-buttons .btn:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 82, 48, 0.5);
+}
+
+#hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 83rem;
+}
+.hero-content .hero-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  max-width: 45rem;
+}
+.hero-content .hero-img ing {
+  width: 100%;
+  height: auto;
+}
+.hero-content img {
+  width: 50rem;
+  height: auto;
+  z-index: 2;
+}
+.hero-text h2 {
+  font-weight: 800;
+}
+.hero-text h1 {
+  font-size: 3.25rem;
+  margin-top: 0.5rem;
+  font-weight: 800;
+}
+.hero-text span {
+  color: #ff4d30;
+}
+.hero-text p {
+  font-size: 1rem;
+  margin: 1.2rem 0 2.5rem 0;
+  color: #706f7b;
+  line-height: 1.6;
+}
+.hero-text .hero-btn {
+  display: flex;
+  gap: 1.2rem;
+}
+.hero-text .hero-btn a {
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.hero-text .hero-btn a.btn {
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+.hero-text .hero-btn a.btn-blk {
+  background-color: black;
+  color: white;
+}
+.hero-text .hero-btn .btn:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 82, 48, 0.5);
+}
+.hero-text .hero-btn a.btn-blk:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
 }
