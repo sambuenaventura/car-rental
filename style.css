@@ -96,7 +96,7 @@ body {
 }
 
 #hero {
-  height: 100vh;
+  height: 97vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -169,4 +169,73 @@ body {
   background-color: white;
   color: black;
   outline: 1px solid black;
+}
+
+#booking {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-content {
+  width: 100%;
+  max-width: 83rem;
+  height: auto;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+}
+.booking-content h1 {
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.booking-content .content-form {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 1.5rem;
+}
+
+.content-form .form-box-car,
+.form-box-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-form .form-box-car,
+.form-box-date {
+  font-weight: 600;
+}
+.content-form i,
+b {
+  color: #ff4d30;
+}
+
+.content-form select,
+input {
+  padding: 0.8rem;
+  outline: none;
+  border: 1px solid #ccd7e6;
+  font-size: 0.9rem;
+}
+.content-form label {
+  padding-bottom: 1rem;
+}
+
+.content-form a {
+  background-color: #ff4d30;
+  align-self: flex-end;
+  text-align: center;
+  color: white;
+  padding: 0.8rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+.content-form a:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 82, 48, 0.5);
 }
