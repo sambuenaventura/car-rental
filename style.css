@@ -22,7 +22,7 @@ li {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--secondary);
+  background-color: white;
   color: var(--primary);
 }
 
@@ -101,6 +101,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f8f8;
 }
 
 .hero-content {
@@ -109,15 +110,16 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 83rem;
+  padding: 1.8rem 1.2rem;
 }
 .hero-content .hero-img {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -3rem;
   z-index: 1;
   max-width: 45rem;
 }
-.hero-content .hero-img ing {
+.hero-content .hero-img img {
   width: 100%;
   height: auto;
 }
@@ -125,6 +127,15 @@ body {
   width: 95rem;
   height: auto;
   z-index: 2;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 60rem;
+
+  z-index: 3;
 }
 .hero-text h2 {
   font-weight: 800;
@@ -172,10 +183,10 @@ body {
 }
 
 #booking {
-  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(180deg, #f8f8f8 20%, #fff 80%);
 }
 
 .booking-content {
@@ -183,7 +194,8 @@ body {
   max-width: 83rem;
   height: auto;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-  padding: 4rem;
+  padding: 3rem 3rem 4rem 3rem;
+  background-color: white;
 }
 .booking-content h1 {
   margin-bottom: 2rem;
@@ -238,4 +250,47 @@ input {
 }
 .content-form a:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 82, 48, 0.5);
+}
+
+#plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+  background-color: white;
+}
+.plan-content {
+  width: 100%;
+  max-width: 83rem;
+  height: auto;
+}
+.plan-content .plan-text {
+  text-align: center;
+  margin: 0 auto;
+}
+.plan-content .plan-text h1 {
+  font-size: 2.5rem;
+  line-height: 2;
+  font-weight: 800;
+}
+.plan-content .plan-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.plan-content .plan-box .item-box {
+  padding: 0 3rem;
+  width: 26rem;
+}
+.plan-content .plan-box .item-box h2 {
+  font-weight: 800;
+}
+.plan-content .plan-box .item-box p {
+  font-size: 1rem;
+  margin: 1.2rem 0 2.5rem 0;
+  color: #706f7b;
+  line-height: 1.6;
 }
