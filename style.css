@@ -460,3 +460,64 @@ input {
   color: #ff4124;
   font-weight: 500;
 }
+
+#details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.details-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 83rem;
+  height: auto;
+}
+
+.details-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+}
+.details-content .details-left {
+  max-width: 35rem;
+}
+
+.details-left h2 {
+  font-weight: 800;
+}
+
+.details-left h1 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  font-weight: 800;
+}
+.details-left p {
+  font-size: 1rem;
+  margin: 1.2rem 0 2.5rem 0;
+  color: #706f7b;
+  line-height: 1.6;
+}
+.details-left .left-btn a {
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+.details-content .details-right {
+  max-width: 20rem;
+}
+
+.details-box {
+  display: flex;
+  width: 100%;
+}
