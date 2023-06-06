@@ -268,6 +268,10 @@ input {
   text-align: center;
   margin: 0 auto;
 }
+.plan-content .plan-text h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 .plan-content .plan-text h1 {
   font-size: 2.5rem;
   line-height: 2;
@@ -313,7 +317,8 @@ input {
   margin-bottom: 2rem;
 }
 .models-content .models-text h2 {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 .models-content .models-text h1 {
   font-size: 2.5rem;
@@ -489,7 +494,8 @@ input {
 }
 
 .details-left h2 {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .details-left h1 {
@@ -541,4 +547,80 @@ input {
 .details-box .box-text p {
   font-size: 1rem;
   color: #706f7b;
+}
+#testimony {
+  background-color: #f8f8f8;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimony-content .testimony-heading {
+  max-width: 50rem;
+  text-align: center;
+  margin: 0 auto 5rem;
+}
+.testimony-content .testimony-heading h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.testimony-content .testimony-heading h1 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  font-weight: 800;
+}
+.testimony-content .testimony-heading p {
+  font-size: 1rem;
+  margin: 0rem 2.5rem;
+  color: #706f7b;
+  line-height: 1.6;
+}
+
+.testimony-flex {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.testimony-box {
+  width: 32rem;
+  background-color: white;
+  padding: 3rem;
+  height: auto;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.testimony-box p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.testimony-box .user {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.testimony-box .user img {
+  max-width: 100%;
+  height: auto;
+  width: 4rem; /* Set your desired width here */
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.testimony-box .user .user-info h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.testimony-box .user .user-info p {
+  font-size: 1rem;
+}
+
+.testimony-box .quotes-icon {
+  bottom: 50px;
+  color: #ff4d30;
+  font-size: 3.8rem;
+  position: absolute;
+  right: 60px;
 }
