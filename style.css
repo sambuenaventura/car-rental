@@ -624,3 +624,44 @@ input {
   position: absolute;
   right: 60px;
 }
+
+#download {
+  background-color: #f8f8f8;
+  background-image: url(../assets/images/download-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 10rem 0 5rem 0;
+  width: 100%;
+}
+
+.download-content {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: black;
+  margin: 0 20rem;
+  width: 34rem;
+}
+.download-content .download-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 800;
+}
+.download-content .download-text p {
+  margin: 1rem 0 2rem 0;
+  font-size: 1rem;
+  color: #706f7b;
+  line-height: 1.6;
+}
+.download-content .download-btn {
+  display: flex;
+  gap: 1.8rem;
+}
+.download-content .download-btn img {
+  max-width: 100%;
+  height: auto;
+  width: 13rem;
+  cursor: pointer;
+}
