@@ -665,3 +665,80 @@ input {
   width: 13rem;
   cursor: pointer;
 }
+#footer {
+  padding-top: 5rem;
+  background-color: white;
+  color: black;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 2fr;
+  grid-template-rows: 1fr;
+
+  width: 100%;
+  max-width: 83rem;
+  height: auto;
+  margin: 0 auto 5rem;
+  gap: 5rem;
+}
+
+.footer-col {
+  height: auto;
+}
+
+.footer-grid .footer-col span {
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.footer-grid .footer-col .rental {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer-grid .footer-col p {
+  font-size: 1rem;
+  color: #706f7b;
+  line-height: 1.6;
+}
+.footer-grid .footer-col li {
+  margin-top: 1rem;
+}
+.footer-grid .footer-col input {
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: black;
+  border-color: transparent;
+  background-color: #ececec;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+
+.footer-grid .footer-col .footer-contact {
+  font-weight: 600;
+  transition: 0.3s;
+}
+.footer-grid .footer-col .footer-contact:hover {
+  color: #ff4124;
+}
+.footer-grid .footer-col .footer-links {
+  transition: 0.3s;
+}
+.footer-grid .footer-col .footer-links:hover {
+  color: #ff4124;
+}
+.footer-grid .footer-col a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+.footer-grid .footer-col a.btn:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 82, 48, 0.5);
+}
