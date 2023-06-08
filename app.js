@@ -1,3 +1,5 @@
+//car-models section
+
 const models = document.querySelectorAll(".item");
 const firstButton = document.querySelector(".model-left .item");
 
@@ -142,3 +144,37 @@ firstButton.classList.remove("item");
 // Initial update of model details and image using the first button's text content
 updateModelDetails(firstButton.textContent);
 updateModelImage(firstButton.textContent);
+
+//faq section
+
+const questions = document.querySelectorAll(".faq-box-question");
+
+questions.forEach((question) => {
+  const answer = question.nextElementSibling;
+
+  question.addEventListener("click", function handleClick(event) {
+    console.log("User clicked:", question);
+
+    questions.forEach((otherQuestion) => {
+      const otherAnswer = otherQuestion.nextElementSibling;
+
+      if (otherQuestion !== question) {
+        otherQuestion.classList.remove("question-active");
+        otherAnswer.classList.remove("answer-active");
+      }
+    });
+
+    question.classList.toggle("question-active");
+    answer.classList.toggle("answer-active");
+  });
+
+  answer.addEventListener("click", function handleAnswerClick(event) {
+    if (question.classList.contains("question-active")) {
+      question.classList.remove("question-active");
+      answer.classList.remove("answer-active");
+    } else {
+      question.classList.add("question-active");
+      answer.classList.add("answer-active");
+    }
+  });
+});
