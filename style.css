@@ -828,3 +828,66 @@ input {
   padding: 2rem 2rem;
   max-height: 20vh;
 }
+
+.mobile-navbar {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: -100%;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  z-index: 999999;
+}
+.mobile-navbar_close {
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  right: 3.5rem;
+  top: 3.5rem;
+  transition: all 0.3s;
+}
+.mobile-navbar_close:hover {
+  color: #ff4d30;
+}
+.mobile-navbar_links {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.3rem;
+  gap: 3rem;
+  list-style: none;
+  text-align: center;
+}
+.mobile-navbar_links li a {
+  color: #010103;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.open-nav {
+  left: 0;
+}
+.mobile-hamb {
+  cursor: pointer;
+  display: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile-hamb {
+    display: flex;
+  }
+  .nav-links,
+  .nav-buttons {
+    display: none;
+  }
+}
