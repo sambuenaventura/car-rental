@@ -294,7 +294,7 @@ input {
   margin-top: 3rem;
 }
 .plan-content .plan-box .item-box {
-  padding: 0 3rem;
+  padding: 0 1rem;
   width: 26rem;
 }
 .plan-content .plan-box .item-box h2 {
@@ -478,6 +478,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .details-flex {
@@ -649,7 +650,7 @@ input {
   height: 100%;
   text-align: left;
   color: black;
-  margin: 0 20rem;
+  margin: 0 18rem;
   width: 34rem;
 }
 .download-content .download-text h1 {
@@ -892,7 +893,7 @@ input {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1300px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   section {
     padding: 1rem;
   }
@@ -937,6 +938,7 @@ input {
 
   #plan {
     margin-bottom: 2rem;
+    padding-top: 4rem;
   }
   .plan-content .plan-text h1 {
     line-height: 1.4;
@@ -950,6 +952,9 @@ input {
   }
 
   /* #car-models */
+  #car-models {
+    padding-top: 4rem;
+  }
   .models-content .models-text {
     margin: 0;
   }
@@ -964,8 +969,13 @@ input {
     flex-direction: column;
     gap: 2rem;
   }
+  .models-content .content-flex .model-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .models-content .content-flex .model-center img {
-    width: 100%;
+    width: 20rem;
   }
 
   #banner {
@@ -979,6 +989,10 @@ input {
   }
 
   /* #details */
+
+  #details {
+    padding-bottom: 4rem;
+  }
   .details-flex .details-img img {
     width: 100%;
     height: auto;
@@ -990,13 +1004,23 @@ input {
   }
   .details-left h1 {
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
+  }
+  .details-left p {
+    padding: 0.5rem 1.5rem;
   }
   .details-right .details-box {
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+
+  .details-right .details-box img {
+    margin: 0;
   }
 
   #testimony {
@@ -1008,10 +1032,10 @@ input {
   }
   .testimony-content .testimony-heading h1 {
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
   }
   .testimony-content .testimony-heading p {
-    margin: 1rem 0;
+    margin: 1.5rem;
   }
   .testimony-flex {
     flex-direction: column;
@@ -1024,6 +1048,13 @@ input {
   }
 
   /* #faq */
+  #faq {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .faq-content {
+    padding-top: 0;
+  }
   .faq-content .faq-image {
     display: none;
   }
@@ -1036,7 +1067,7 @@ input {
   }
 
   #download {
-    padding: 2rem 1rem !important;
+    padding: 4rem 1rem;
     background-image: none;
   }
   .download-content {
@@ -1046,10 +1077,10 @@ input {
   }
   .download-content .download-text h1 {
     line-height: 1.4;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   .download-content .download-text p {
-    margin: 2rem 0;
+    margin: 1.5rem;
   }
   .download-content .download-btn {
     flex-direction: column;
@@ -1062,5 +1093,114 @@ input {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    text-align: center;
+  }
+  .footer-grid .footer-col p {
+    margin: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .hero-content .hero-text .hero-btn {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .models-content .content-flex .model-center img {
+    width: 25rem;
+  }
+
+  .download-content .download-btn {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .testimony-flex .testimony-box .quotes-icon {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .plan-content .plan-box {
+    flex-direction: row;
+  }
+  .plan-content .plan-box .item-box {
+    width: 26rem;
+  }
+
+  .details-left {
+    max-width: 100%;
+  }
+  .details-content .details-right .details-box {
+    flex-direction: row;
+  }
+  .details-content .details-right .details-box img {
+    margin: 0.8rem;
+  }
+
+  #download {
+    background-image: url(../assets/images/download-bg.png);
+  }
+  .download-content {
+    text-align: left;
+    padding-left: 3rem;
+  }
+  .download-content .download-text {
+    max-width: 32rem;
+  }
+  .download-content .download-text h1 {
+    line-height: 1.4;
+    margin: 1rem 0;
+  }
+  .download-content .download-text p {
+    margin: 1.5rem 0;
+  }
+  .download-content .download-btn {
+    flex-direction: row;
+    justify-content: left;
+    padding: 1rem 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  .footer-grid .footer-col p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .content-flex {
+    flex-wrap: wrap;
+  }
+  .details-flex .details-content {
+    flex-direction: row;
+  }
+  .details-left {
+    text-align: left;
+  }
+  .details-left p {
+    padding: 0;
+  }
+
+  .testimony-flex {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .download-content .download-text {
+    max-width: 30rem !important;
+  }
+}
+
+@media (max-width: 1920px) {
+  section {
+    padding: 1rem;
   }
 }
