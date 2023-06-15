@@ -512,6 +512,59 @@ input {
   font-size: 1.2rem;
   font-weight: 500;
 }
+.company-content {
+}
+.company-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 5rem auto;
+  width: 25rem;
+  margin-bottom: -1rem;
+}
+.company-img img {
+  width: 49rem;
+}
+.company-text {
+  width: 55rem;
+}
+.company-text h1 {
+  font-size: 3rem;
+}
+.company-text p {
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: #706f7b;
+  line-height: 1.6;
+}
+.box-text p {
+  margin: 0;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-text {
+  gap: 1.8rem;
+}
+.icon-box .box-img {
+  width: 10rem;
+}
+.icon-box .box-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-box .box-text h4 {
+  font-size: 3rem;
+}
+.icon-box .box-text p {
+  font-size: 1rem;
+}
+
 #banner #about-banner {
   flex-direction: row;
   justify-content: center;
