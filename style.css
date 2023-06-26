@@ -857,7 +857,14 @@ p {
   position: absolute;
   right: 60px;
 }
-
+/* team.html */
+#team {
+  margin: 4rem 15rem;
+  margin-bottom: 0;
+}
+.item-text1 {
+  text-align: center;
+}
 #download {
   background-color: #f8f8f8;
   background-image: url(../assets/images/download-bg.png);
