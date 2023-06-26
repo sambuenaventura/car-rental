@@ -597,6 +597,85 @@ p {
   width: 100%;
 }
 
+/* models.html */
+#car-models2 {
+  margin: 4rem 15rem;
+  margin-bottom: 0;
+}
+.grid-container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 1.5rem;
+  /* border: 1px solid red; */
+}
+.models-item {
+  line-height: 1.75rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
+  border-radius: 4px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(232, 232, 232, 1) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+.models-item .item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.models-item .item-img img {
+  max-width: 20rem;
+  height: 15rem;
+}
+.models-item .item-text h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.item-text {
+  padding: 2rem;
+}
+.item-text .flex-desc h3,
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.item-text .flex-desc p {
+  color: #ff4d30;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.text-grid .text-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-flex .flex-icon .svg-icon {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: auto;
+  max-height: 2rem;
+  fill: #ff4d30;
+}
+
+.text-flex .flex-desc {
+  line-height: 1.21;
+}
+
 #details {
   display: flex;
   align-items: center;
@@ -759,7 +838,7 @@ p {
 
 #download {
   background-color: #f8f8f8;
-  background-image: url(/car-rental/assets/images/download-bg.png);
+  background-image: url(../assets/images/download-bg.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
