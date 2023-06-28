@@ -893,7 +893,7 @@ p {
 }
 #download {
   background-color: #f8f8f8;
-  background-image: url(../assets/images/download-bg.png);
+  background-image: url(./assets/images/download-bg.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
