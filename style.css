@@ -862,8 +862,14 @@ p {
   margin: 4rem 15rem;
   margin-bottom: 0;
 }
+
 .item-text1 {
+  margin: 1.4rem;
   text-align: center;
+}
+
+.item-text1 p {
+  color: #706f7b;
 }
 #download {
   background-color: #f8f8f8;
