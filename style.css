@@ -477,16 +477,34 @@ input {
 }
 
 /* about.html - #banner */
-#about-hero {
-  background-image: url(./assets/images/about-bg.jpg);
-  background-position: 50% 20%;
+#hero-main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
   position: relative;
   width: 100%;
 }
-#about-hero .about-hero_overlay {
+.bg1 {
+  background-image: url(./assets/images/hero-bg1.jpg) !important;
+  background-position: 50% 90%;
+}
+.bg2 {
+  background-image: url(./assets/images/hero-bg2.jpg) !important;
+  background-position: 10% 70%;
+}
+.bg3 {
+  background-image: url(./assets/images/hero-bg3.jpg) !important;
+  background-position: 50% 20%;
+}
+.bg4 {
+  background-image: url(./assets/images/hero-bg4.jpg) !important;
+  background-position: 10% 90%;
+}
+.bg5 {
+  background-image: url(./assets/images/hero-bg5.jpg) !important;
+  background-position: 50% 70%;
+}
+#hero-main .hero-main_overlay {
   background-color: hsla(0, 0%, 100%, 0.78);
   height: 100%;
   position: absolute;
@@ -494,7 +512,7 @@ input {
   top: 0;
   width: 100%;
 }
-#about-hero .about-hero_text {
+#hero-main .hero-main_text {
   color: #010103;
   display: flex;
   flex-direction: column;
@@ -505,12 +523,12 @@ input {
   z-index: 3;
   padding-left: 18rem;
 }
-#about-hero .about-hero_text h1 {
+#hero-main .hero-main_text h1 {
   font-size: 2.2rem;
   line-height: 2;
   font-weight: 800;
 }
-#about-hero .about-hero_text p {
+#hero-main .hero-main_text p {
   font-size: 1.2rem;
   font-weight: 500;
 }
