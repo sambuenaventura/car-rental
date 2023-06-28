@@ -452,7 +452,9 @@ input {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-
+.banner-nopad {
+  padding-top: 0 !important;
+}
 .banner-content {
   background-color: #2d2d2d;
   width: 100%;
@@ -808,7 +810,9 @@ p {
   align-items: center;
   justify-content: center;
 }
-
+.testimony-page {
+  height: 95vh !important;
+}
 .testimony-content .testimony-heading {
   max-width: 50rem;
   text-align: center;
