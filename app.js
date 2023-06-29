@@ -138,12 +138,23 @@ models.forEach((item) => {
 });
 
 // Set the first button as active initially
-firstButton.classList.add("active-btn");
-firstButton.classList.remove("item");
+// added conditional checks to avoid accessing null values.
+if (firstButton) {
+  if (!firstButton.classList.contains("active-btn")) {
+    firstButton.classList.add("active-btn");
+  }
+
+  if (firstButton.classList.contains("item")) {
+    firstButton.classList.remove("item");
+  }
+}
 
 // Initial update of model details and image using the first button's text content
-updateModelDetails(firstButton.textContent);
-updateModelImage(firstButton.textContent);
+// added conditional checks to avoid accessing null values.
+if (firstButton) {
+  updateModelDetails(firstButton.textContent);
+  updateModelImage(firstButton.textContent);
+}
 
 //faq section
 
@@ -177,4 +188,24 @@ questions.forEach((question) => {
       answer.classList.add("answer-active");
     }
   });
+});
+
+const menu = document.querySelector(".mobile-hamb");
+const openmenu = document.querySelector(".mobile-navbar");
+const closemenu = document.querySelector(".mobile-navbar_close");
+
+menu.addEventListener("click", function handleAnswerClick(event) {
+  if (openmenu.classList.contains("open-nav")) {
+    openmenu.classList.remove("open-nav");
+  } else {
+    openmenu.classList.add("open-nav");
+  }
+});
+
+closemenu.addEventListener("click", function handleAnswerClick(event) {
+  if (openmenu.classList.contains("open-nav")) {
+    openmenu.classList.remove("open-nav");
+  } else {
+    openmenu.classList.add("open-nav");
+  }
 });
