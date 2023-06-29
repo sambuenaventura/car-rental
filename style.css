@@ -1184,10 +1184,10 @@ textarea {
 }
 .mobile-navbar_close {
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   position: absolute;
-  right: 3.5rem;
-  top: 3.5rem;
+  right: 1.2rem;
+  top: 2.3rem;
   transition: all 0.3s;
 }
 .mobile-navbar_close:hover {
@@ -1203,9 +1203,12 @@ textarea {
 }
 .mobile-navbar_links li a {
   color: #010103;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
+}
+.mobile-navbar_links a:hover {
+  color: #ff4d30;
 }
 .open-nav {
   left: 0;
@@ -1221,6 +1224,7 @@ textarea {
   font-weight: 900;
 }
 
+/* index.html media query */
 @media screen and (max-width: 1000px) {
   .mobile-hamb {
     display: flex;
@@ -1262,6 +1266,9 @@ textarea {
   }
   .hero-content .hero-text .hero-btn {
     flex-direction: column;
+  }
+  #hero-main .hero-main_text {
+    padding-left: 0;
   }
 
   #booking {
@@ -1540,5 +1547,54 @@ textarea {
 @media (max-width: 1920px) {
   section {
     padding: 1rem;
+  }
+}
+
+/* about.html media query */
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .company-flex {
+    flex-direction: column;
+    width: 0;
+  }
+
+  .company-img img {
+    width: 20rem;
+    padding: 0 1rem;
+  }
+
+  .company-text {
+    width: 20rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .company-text h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .company-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: 800;
+    margin: 1rem 0;
+  }
+  .company-yext p {
+    font-size: 1rem;
+    margin: 1.2rem 0 2.5rem 0;
+    color: #706f7b;
+    line-height: 1.6;
+  }
+  .icon-text {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  #banner #about-banner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #banner #about-banner h1 {
+    font-size: 1.8rem;
+  }
+  #banner #about-banner span {
+    font-size: 1.4rem;
   }
 }
