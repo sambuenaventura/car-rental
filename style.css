@@ -1016,7 +1016,6 @@ p {
 #contact-form {
   margin: 4rem 20rem;
   margin-bottom: 0;
-  height: 55vh;
   background-image: url(./assets/images/contact-bg.png);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1713,5 +1712,47 @@ textarea {
 @media screen and (min-width: 320px) and (max-width: 1440px) {
   #team {
     margin: 4rem 0;
+  }
+}
+
+/* contact.html media query */
+@media screen and (min-width: 320px) and (max-width: 1300px) {
+  #contact-form {
+    margin: 4rem 0;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contact-left {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .contact-left {
+    width: 28rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  #contact-form {
+    margin: 4rem 6rem;
+  }
+  .contact-left {
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+  #contact-form {
+    margin: 4rem 12rem;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  #contact-form {
+    margin: 4rem 14rem;
   }
 }
