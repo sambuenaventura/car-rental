@@ -809,10 +809,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 4rem;
 }
-.testimony-page {
-  height: 95vh !important;
-}
+
 .testimony-content .testimony-heading {
   max-width: 50rem;
   text-align: center;
@@ -1392,6 +1391,13 @@ textarea {
     display: none;
   }
 
+  @media screen and (min-width: 320px) and (max-width: 400px) {
+    .testimony-box .user {
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+    }
+  }
   /* #faq */
   #faq {
     padding-top: 4rem;
